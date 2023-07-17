@@ -19,4 +19,5 @@ mkdir -p out_dir_temporal_filtering
 mkdir -p out_dir_report
 
 # Run the actual python code
-singularity exec docker://brainlife/mne:0.23dev python3 temporal_filtering.py
+# singularity exec docker://brainlife/mne:0.23dev python3 temporal_filtering.py
+singularity exec docker://brainlife/mne:1.2.1 python3 main.py
