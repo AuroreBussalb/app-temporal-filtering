@@ -389,7 +389,7 @@ def main():
         config = json.load(config_json)
 
     # Read the files
-    data_file = config.pop('fif')
+    data_file = config.pop('mne')
     if config['param_epoched_data'] is False:
         data = mne.io.read_raw_fif(data_file, allow_maxshield=True)
     else:
